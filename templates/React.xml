@@ -3,4 +3,10 @@
     <variable name="TM_FILENAME_BASE" expression="capitalize(camelCase(fileNameWithoutExtension()))" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context />
   </template>
+  <template name="rsis" value="import React from 'react';&#10;&#10;interface Props {&#10;}&#10;&#10;const $TM_FILENAME_BASE$: React.FC&lt;Props&gt; = () =&gt; {&#10; &#10; return $END$&#10;};&#10;&#10;export default $TM_FILENAME_BASE$;" toReformat="false" toShortenFQNames="true">
+    <variable name="TM_FILENAME_BASE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
